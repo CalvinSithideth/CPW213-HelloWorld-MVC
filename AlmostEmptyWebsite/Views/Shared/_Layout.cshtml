@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <h2>Hello World!</h2>
+
+        <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">Main Page</a>
+                </li>
+                <li>
+                    <a asp-controller="Pages" asp-action="Index">Pages</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>This is a footer. </p>&copy; @DateTime.Now.Year
+    </footer>
+</body>
+
+</html>
